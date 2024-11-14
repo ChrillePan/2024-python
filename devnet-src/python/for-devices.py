@@ -5,8 +5,7 @@ for item in devices:
     if "R" in item:
         routers.append(item)
         print(item)
-for item in devices:
-    if "S" in item:
+    elif "S" in item:
         switches.append(item)
         print(item)
 
