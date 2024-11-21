@@ -1,5 +1,5 @@
 while True:
-    x=input("Enter a number to count : ")
+    x=input("Enter a number to count or 'q'/'quit' to end : ")
     if x == 'q' or x == 'quit':
         break
 
