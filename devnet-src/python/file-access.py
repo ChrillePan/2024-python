@@ -1,4 +1,7 @@
-myfile=open("devices.txt","r")
-for item in myfile:
-    print(item.strip())
-myfile.close()
+devices=[]
+file=open("devices.txt","r")
+for item in file:
+    item = item.strip()
+    devices.append(item)
+file.close()
+print(devices)
