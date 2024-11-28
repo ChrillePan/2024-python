@@ -1,6 +1,6 @@
 print(f"Add your device via user input. Leave the program with 'exit'") #Program info
 
-with open ("devices.txt", "a") as file: #Mode a means: Add date to the end of the file without overwrite
+with open ("devices.txt", "a") as file: #Mode a means: Add data to the end of the file without overwrite
     while True:
         new_item = input("Enter device name: ") #Ask the user for a new device name
 
@@ -8,4 +8,5 @@ with open ("devices.txt", "a") as file: #Mode a means: Add date to the end of th
             print("All done!")
             break
 
-        file.write(new_item + "\n") #Add the input to the file plus newline
+        else:
+            file.write(new_item + "\n") #Add the input to the file plus newline
