@@ -5,3 +5,4 @@ for item in file:
     devices.append(item)
 file.close()
 print(devices)
+#Test
