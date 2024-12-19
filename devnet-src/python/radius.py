@@ -1,16 +1,18 @@
-def circumference(radius):
+#! /usr/bin/ python3
+
+#List for my values
+radius_values = [2,5,7,9,11,13]
+
+def circumference(radius_values):
   pi = 3.14159 
-  circumferenceValue = pi * radius * 2
+  circumferenceValue = pi * radius_values * 2
   return circumferenceValue
 
-def printCircumference(radius):
-  myCircumference = circumference(radius)
-  print ("Circumference of a circle with a radius of " + str(radius) + " is " + str(myCircumference))
+def printCircumference(radius_values):
+  myCircumference = circumference(radius_values)
+  print (f"Circumference of a circle with a radius of {radius_values:3} is {myCircumference:.2f}")
 
-radius1 = 2
-radius2 = 5
-radius3 = 7
+#New Way
 
-printCircumference(radius1)
-printCircumference(radius2)
-printCircumference(radius3)
+for r in radius_values:
+    printCircumference(r)
